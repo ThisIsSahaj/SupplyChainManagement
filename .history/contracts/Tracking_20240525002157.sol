@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
-// contracts/Tracking.sol
-pragma solidity ^0.8.0;
+
+pragma solidity ^0.8.4;
 
 contract Tracking {
     enum ShipmentStatus { PENDING, IN_TRANSIT, DELIVERED }

@@ -35,7 +35,7 @@ const index=() =>{
     const [completeModal, setCompleteModal]= useState(false);
     const [getModel , setGetModel]= useState(false);
 // DATA STATE VARIABLE
-    const[AllShipmentsdata ,setallShipmentsdata  ]=useState();
+    const[AllShipmentdata ,setallShipmentsdata  ]=useState();
 
     useEffect(()=>{
         return async()=>{

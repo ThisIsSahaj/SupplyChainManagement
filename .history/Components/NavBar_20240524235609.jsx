@@ -1,7 +1,7 @@
 import { useEffect,useState,useContext } from "react";
 
 import React from "react";
-import {TrackingContext} from "../Conetxt/TrackingContext";
+import {TrackingContext} from "../context/TrackingContext";
 import {Nav1 ,Nav2,NAv3} from "../Components/index"
 // import { title } from "process";
 // import path from "path";

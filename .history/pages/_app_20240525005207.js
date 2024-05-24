@@ -12,10 +12,10 @@ export default function App({ Component, pageProps }) {
   return (
   <>
     <TrackingProvider>
-    <Navbar />
+    {/* <Navbar /> */}
      <Component {...pageProps} />
     </TrackingProvider>
-    <Footer />
+    {/* <Footer /> */}
  </>
   );
 }
