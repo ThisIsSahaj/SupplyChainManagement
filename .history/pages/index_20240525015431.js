@@ -21,7 +21,7 @@ const index=() =>{
     const{
         currentUser,
         createShipment,
-        getAllShipments,
+        getAllShipment,
         completeShipment,
         getShipment,
         startShipment,
@@ -38,7 +38,7 @@ const index=() =>{
     const[allShipmentsdata ,setallShipmentsdata  ]=useState();
 
     useEffect(()=>{
-      const getCampaignsData = getAllShipments();
+      const getCampaignsData = getAllShipment();
         return async()=>{
         const allData = await getCampaignsData;
         setallShipmentsdata(allData);

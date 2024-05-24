@@ -8,7 +8,7 @@ export default ({
   openProfile,
   setOpenProfile,
   currentUser,
-  getShipmentsCount,
+  getShipmentCount,
 }) => {
   const [count, setCount] = useState();
   useEffect(() => {

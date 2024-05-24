@@ -1,13 +1,13 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect,useState,useContext } from "react";
 
 import React from "react";
 import {TrackingContext} from "../Conetxt/TrackingContext";
-import {Nav1 ,Nav2,Nav3} from "../Components/index"
+import {Nav1 ,Nav2,NAv3} from "../Components/index"
 // import { title } from "process";
 // import path from "path";
 
 export default ()=>{
-  const [state , setState]= useState(false);
+  const [state , useState]= useState(false);
   const { currentUser,connectWallet} =useContext(TrackingContext);
   
   const navigation =[

@@ -97,5 +97,5 @@ export default function ShipmentDetails({ getModel, setGetModel, getShipment }) 
         </div>
       </div>
     </div>
-  ) : "";
+  ) : null;
 }

@@ -31,7 +31,7 @@ export default ({
   ];
 
   const openModalBox = (text)=>{
-    if (text ===1){
+    if (texy ===1){
       setCompleteModal(true);
     }else if(text ===2){
       setGetModel(true);
