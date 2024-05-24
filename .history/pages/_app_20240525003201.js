@@ -3,7 +3,7 @@ import "../styles/globals.css";
 
 //INTERNAL IMPORT 
 
-import { TrackingProvider } from "../Conetxt/TrackingContext";
+import { TrackingProvider } from "../Conetxt/Tracking";
 
 import {Navbar ,Footer} from "../Components";
 

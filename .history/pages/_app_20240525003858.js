@@ -7,7 +7,7 @@ import { TrackingProvider } from "../Conetxt/TrackingContext";
 
 import {Navbar ,Footer} from "../Components";
 
-export default function App({ Component, pageProps }) {
+ function App({ Component, pageProps }) {
 
   return (
   <>
@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
  </>
   );
 }
-
+export default App;
 //   return <Component {...pageProps} />;
   
 // }
