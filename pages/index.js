@@ -35,11 +35,12 @@ const index=() =>{
     const [completeModal, setCompleteModal]= useState(false);
     const [getModel , setGetModel]= useState(false);
 // DATA STATE VARIABLE
-    const[AllShipmentsdata ,setallShipmentsdata  ]=useState();
+    const[allShipmentsdata ,setallShipmentsdata  ]=useState();
 
     useEffect(()=>{
+      const getCampaignsData = getAllShipment();
         return async()=>{
-        const getCampaignsData = getAllShipment();
+        const allData = await getCampaignsData;
         setallShipmentsdata(allData);
         };
     },[]);
@@ -53,6 +54,11 @@ const index=() =>{
         setStartModal={setStartModal}
         />
         <Table
+        setCreateShipmentModel={setCreateShipmentModel}
+        allShipmentsdata={allShipmentsdata}
+       
+        />
+        <Form
         createShipmentModel={createShipmentModel}
         createShipment={createShipment}
         setCreateShipmentModel={setCreateShipmentModel}
@@ -64,7 +70,7 @@ const index=() =>{
         getShipmentsCount={getShipmentsCount}
         />
         <CompleteShipment
-        compketemodal={completeModal}
+        completemodal={completeModal}
         setCompleteModal={setCompleteModal}
         completeShipment={completeShipment}
         />
