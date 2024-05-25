@@ -22,12 +22,12 @@ export default ({
     {
       avatar:images.userProfile,
     },
-    // {
-    //   avatar:images.shipCount,
-    // },
-    // {
-    //   avatar:images.send,
-    // },
+    {
+      avatar:images.shipCount,
+    },
+    {
+      avatar:images.send,
+    },
   ];
 
   const openModalBox = (text)=>{

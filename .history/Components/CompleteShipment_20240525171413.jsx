@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-export default ({ completeModal, setCompleteModal, completeShipment }) => {
+export default ({ completeModal, setCompleteModel, completeShipment }) => {
   const [completeShip, setCompleteShip] = useState({
-    receiver: "",
+    reveiver: "",
     index: "",
   });
 
@@ -13,14 +13,14 @@ export default ({ completeModal, setCompleteModal, completeShipment }) => {
     <div className="fixed inset-0 z-10 overflow-y-auto">
       <div
         className="fixed inset-0 w-full h-full bg-black opacity-40"
-        onClick={() => setCompleteModal(false)}
-        ></div>
+        onClick={() => setCompleteModel(false)}
+      ></div>
       <div className="flex items-center min-h-screen px-4 py-8">
         <div className="relative w-full max-w-lg p-4 mx-auto bg-white rounded-md shadow-lg">
           <div className="flex jsutify-end">
             <button
               className="p-2 text-gray-400 rounded-md hover:bg-gray-100"
-              onClick={() => setCompleteModal(false)}
+              onClick={() => setCompleteModel(false)}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export default ({ completeModal, setCompleteModal, completeShipment }) => {
               </svg>
             </button>
           </div>
-          <div className="max-w-sm mx-auto py-3 space-y-3 text-center">
+          <div className="max-w-sm mx-auto py-3 space-y-3 space-y-3 text-center">
             <h4 className="text-lg font-medium text-gray-800">
               Complete Shipment
             </h4>

@@ -8,57 +8,56 @@ export default ({
   setGetModel,
   setStartModal
 
-})=>{
-  const team =[
+}) => {
+  const team = [
     {
-      avatar:images.compShipment,
+      avatar: images.compShipment,
     },
     {
-      avatar:images.getShipment,
+      avatar: images.getShipment,
     },
     {
-      avatar:images.startShipment,
+      avatar: images.startShipment,
     },
     {
-      avatar:images.userProfile,
+      avatar: images.userProfile,
     },
-    // {
-    //   avatar:images.shipCount,
-    // },
-    // {
-    //   avatar:images.send,
-    // },
+    {
+      avatar: images.shipCount,
+    },
+    {
+      avatar: images.send,
+    },
   ];
 
-  const openModalBox = (text)=>{
-    if (text ===1){
-      console.log('complete modal clicked');
+  const openModalBox = (text) => {
+    if (text === 1) {
       setCompleteModal(true);
-    }else if(text ===2){
+    } else if (text === 2) {
       setGetModel(true);
-    }else if(text ===3){
+    } else if (text === 3) {
       setStartModal(true);
-    }else if(text ===4){
+    } else if (text === 4) {
       setOpenProfile(true);
     }
-  };  
+  };
   return (
     <section className=" py-0 pb-14">
       <div className=" max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="mt-12">
           <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-            {team.map((item, i) => (
-              <li key={i}>
-                <div onClick={() => openModalBox(i+1)}
-                className=" w-full h-60 sm:h-52 md:h-56">
+            {team.map((item, i) => {
+              return <li key={i}>
+                <div onClick={() => openModalBox(true)}
+                  className=" w-full h-60 sm:h-52 md:h-56">
                   <Image
                     src={item.avatar}
                     className="w-full h-full object-cover object-center shadow-md rounded-xl"
                     alt=""
-                    />
+                  />
                 </div>
               </li>
-            ))}
+            })}
           </ul>
         </div>
       </div>

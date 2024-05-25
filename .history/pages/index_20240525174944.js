@@ -70,7 +70,7 @@ const index=() =>{
         getShipmentsCount={getShipmentsCount}
         />
         <CompleteShipment
-        completeModal={completeModal}
+        completemodal={completeModal}
         setCompleteModal={setCompleteModal}
         completeShipment={completeShipment}
         />

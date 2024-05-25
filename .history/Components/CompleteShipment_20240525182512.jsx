@@ -2,14 +2,14 @@ import { useState } from "react";
 
 export default ({ completeModal, setCompleteModal, completeShipment }) => {
   const [completeShip, setCompleteShip] = useState({
-    receiver: "",
+    recevier: "",
     index: "",
   });
 
   const changeStatus = async () => {
     completeShipment(completeShip);
   };
-  return completeModal ? (
+  return completeShipment ? (
     <div className="fixed inset-0 z-10 overflow-y-auto">
       <div
         className="fixed inset-0 w-full h-full bg-black opacity-40"
@@ -47,13 +47,13 @@ export default ({ completeModal, setCompleteModal, completeShipment }) => {
               <div className="relative mt-3">
                 <input
                   type="text"
-                  placeholder="receiver"
+                  placeholder="recevier"
                   className="w-full pl-5 pr-3 py-2 text-gray-500 bg-transparent
                outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                   onChange={(e) =>
                     setCompleteShip({
                       ...completeShip,
-                      receiver: e.target.value,
+                      recevier: e.target.value,
                     })
                   }
                 />

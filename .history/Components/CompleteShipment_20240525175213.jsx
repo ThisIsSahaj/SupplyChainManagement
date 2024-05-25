@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default ({ completeModal, setCompleteModal, completeShipment }) => {
+export default CompleteShipment ({ completeModal, setCompleteModal, completeShipment }) => {
   const [completeShip, setCompleteShip] = useState({
     receiver: "",
     index: "",
@@ -10,11 +10,11 @@ export default ({ completeModal, setCompleteModal, completeShipment }) => {
     completeShipment(completeShip);
   };
   return completeModal ? (
-    <div className="fixed inset-0 z-10 overflow-y-auto">
+    <div className="fixed inset-0 z-10 overflow-y-auto" onClick={()=> Alert("EJLk")}>
       <div
-        className="fixed inset-0 w-full h-full bg-black opacity-40"
+        className="fixed inset-0 w-full h-full bg-pink-300 opacity-40"
         onClick={() => setCompleteModal(false)}
-        ></div>
+      ></div>
       <div className="flex items-center min-h-screen px-4 py-8">
         <div className="relative w-full max-w-lg p-4 mx-auto bg-white rounded-md shadow-lg">
           <div className="flex jsutify-end">

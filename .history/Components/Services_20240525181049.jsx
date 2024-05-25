@@ -22,17 +22,16 @@ export default ({
     {
       avatar:images.userProfile,
     },
-    // {
-    //   avatar:images.shipCount,
-    // },
-    // {
-    //   avatar:images.send,
-    // },
+    {
+      avatar:images.shipCount,
+    },
+    {
+      avatar:images.send,
+    },
   ];
 
   const openModalBox = (text)=>{
     if (text ===1){
-      console.log('complete modal clicked');
       setCompleteModal(true);
     }else if(text ===2){
       setGetModel(true);

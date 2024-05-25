@@ -7,7 +7,7 @@ export default ({ completeModal, setCompleteModal, completeShipment }) => {
   });
 
   const changeStatus = async () => {
-    completeShipment(completeShip);
+    completeShipment(setCompleteShip);
   };
   return completeModal ? (
     <div className="fixed inset-0 z-10 overflow-y-auto">

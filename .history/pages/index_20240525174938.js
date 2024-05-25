@@ -69,11 +69,11 @@ const index=() =>{
         currentUser={currentUser}
         getShipmentsCount={getShipmentsCount}
         />
-        <CompleteShipment
-        completeModal={completeModal}
+        {/* <CompleteShipment
+        completemodal={completeModal}
         setCompleteModal={setCompleteModal}
         completeShipment={completeShipment}
-        />
+        /> */}
         <GetShipment
         getModel={getModel}
         setGetModel={setGetModel}

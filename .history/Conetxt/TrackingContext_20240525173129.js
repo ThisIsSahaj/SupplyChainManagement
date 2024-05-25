@@ -83,6 +83,7 @@ export const TrackingProvider = ({ children }) => {
 
   const completeShipment = async (completeShip) => {
     console.log(completeShip);
+    console.log('i am complete shipment');
     const { receiver, index } = completeShip;
     try {
       if (!window.ethereum) return "Install MetaMask";
