@@ -2,11 +2,12 @@ const hre = require("hardhat");
 
 async function main() {
 
-    const Tracking = await hre.ethers.getContractFactory("Tracking");
-    const tracking = await Tracking.deploy();
+    const Lock = await hre.ethers.getContractFactory("Lock");
+    const lock = await Lock.deploy(unlockTime, {value: 
+    lockedAmount });
 
-    await tracking.deployed();
-    console.log(`Tracking deployed to ${tracking.address}`);
+    await lock.deployed();
+    console.log(`Tracking deployed to ${lock.address}`);
 
     // const Tracking = await hre.ethers.getContractFactory("Tracking");
     // const tracking = await Tracking.deploy(); // Added 'await' and corrected syntax

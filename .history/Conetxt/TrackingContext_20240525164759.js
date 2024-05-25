@@ -46,7 +46,7 @@ export const TrackingProvider = ({ children }) => {
 
   const getAllShipments = async () => {
     try {
-      const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:8545/');
+      const provider = new ethers.providers.JsonRpcProvider('https://pacific-rpc.sepolia-testnet.manta.network/http');
       const contract = fetchContract(provider);
       const shipments = await contract.getAllTransactions();
       console.log(shipments);
@@ -72,7 +72,7 @@ export const TrackingProvider = ({ children }) => {
       const accounts = await window.ethereum.request({
         method: "eth_accounts",
       });
-      const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:8545/');
+      const provider = new ethers.providers.JsonRpcProvider('https://pacific-rpc.sepolia-testnet.manta.network/http');
       const contract = fetchContract(provider);
       const shipmentsCount = await contract.getShipmentsCount(accounts[0]);
       return shipmentsCount.toNumber();
@@ -117,7 +117,7 @@ export const TrackingProvider = ({ children }) => {
       const accounts = await window.ethereum.request({
         method: "eth_accounts",
       });
-      const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:8545/');
+      const provider = new ethers.providers.JsonRpcProvider('https://pacific-rpc.sepolia-testnet.manta.network/http');
       const contract = fetchContract(provider);
       const shipment = await contract.getShipment(accounts[0], index);
       const singleShipment = {

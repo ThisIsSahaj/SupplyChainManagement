@@ -61,7 +61,7 @@ return(
           {converTime(shipment.pickupTime)}
           </td>
           <td className="px-6 py-4 whitespace-nowrap">
-          {shipment.distance} Km
+          {shipment.distance}
           </td>
           <td className="px-6 py-4 whitespace-nowrap">
            {shipment.price}

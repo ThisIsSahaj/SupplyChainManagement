@@ -15,7 +15,7 @@ return(
   <div className=" items-start justify-between md:flex">
     <div className=" max-w-lg">
       <h3 className=" text-greay-800 text-xl font-bold sm:text-2xl">
-        Create Treacking
+        Creat Treacking
       </h3>
 <p className="mt-2 text-gray-600">
   Create a new tracking number for your shipment
@@ -49,7 +49,7 @@ return(
       {allShipmentsdata?.map((shipment, idx)=>(
         <tr key={idx} >
           <td className="px-6 py-3 whitespace-nowrap">
-            {shipment.sender.slice(0, 15)}...
+            {shipmrnt.sender.slice(0, 15)}...
           </td>
           <td className="px-6 py-4 whitespace-nowrap">
           {shipment.receiver.slice(0, 15)}...
@@ -61,7 +61,7 @@ return(
           {converTime(shipment.pickupTime)}
           </td>
           <td className="px-6 py-4 whitespace-nowrap">
-          {shipment.distance} Km
+          {shipment.distance}
           </td>
           <td className="px-6 py-4 whitespace-nowrap">
            {shipment.price}

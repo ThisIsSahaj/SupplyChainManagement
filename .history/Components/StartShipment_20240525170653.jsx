@@ -44,7 +44,7 @@ outline-none border focus: border-indigo-600 shadow-sm rounded-lg"
                 onChange={(e) =>
                   setGetProduct({
                     ...getProduct,
-                    receiver: e.target.value,
+                    reveiver: e.target.value,
                   })
                 }
               />
