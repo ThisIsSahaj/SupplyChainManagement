@@ -4,24 +4,24 @@ import { fromJSON } from "postcss";
 
 
 export default ()=>{
-  const footerNavs =[
-    {
-      href:"javasvript:void(0)",
-      name:"Terms",
-    },
-    {
-      href:"javasvript:void(0)",
-      name:"Privacy",
-    },
-    {
-      href:"javasvript:void(0)",
-      name:"Licence",
-    },
-    {
-      href:"javasvript:void(0)",
-      name:"About us",
-    },
-  ];
+  // const footerNavs =[
+  //   {
+  //     href:"javasvript:void(0)",
+  //     name:"Terms",
+  //   },
+  //   {
+  //     href:"javasvript:void(0)",
+  //     name:"Privacy",
+  //   },
+  //   {
+  //     href:"javasvript:void(0)",
+  //     name:"Licence",
+  //   },
+  //   {
+  //     href:"javasvript:void(0)",
+  //     name:"About us",
+  //   },
+  // ];
   return(
     <footer className="pt-10">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 nd:px-8">
@@ -31,7 +31,7 @@ export default ()=>{
           <p className="max-w-md">
             {/* devloped by Pull Stackers. */}
           </p>
-          <ul className="flex flex-wrap gap-4 text-sm sm:text-base">
+          {/* <ul className="flex flex-wrap gap-4 text-sm sm:text-base">
             {footerNavs.map((item,idx)=>(
               <li className="text-gray-800 hover:text-blue-500 duration-150">
                 <a key={idx} href={item.href}>
@@ -39,7 +39,7 @@ export default ()=>{
                 </a>
               </li>
             ))}
-          </ul>
+          </ul> */}
           </div>
             <div className="mt-6">
               <p className="text-gray-700 font-semibold"></p>
