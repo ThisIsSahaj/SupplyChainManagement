@@ -10,12 +10,12 @@ export default ()=>{
   const [state , setState]= useState(false);
   const { currentUser,connectWallet} =useContext(TrackingContext);
   
-  const navigation =[
-    { title: "Home", path:"#"},
-    { title: "About", path:"#" },
-    { title: "Contact Us", path:"#"},
-    { title: "Erc20", path:"#"}
-];
+//   const navigation =[
+//     { title: "Home", path:"#"},
+//     { title: "About", path:"#" },
+//     { title: "Contact Us", path:"#"},
+//     { title: "Erc20", path:"#"}
+// ];
 
 useEffect(()=>{
   document.onclick =(e)=>{
@@ -35,7 +35,7 @@ return(
       <div className="flex justify-between items-center py-5 md:block">
         <a href="javascriot:void(0)">
           <img
-          src="https://www.floatui.com/logo.svg"
+          src="logo.png"
           width={120}
           height={50}
           alt="Float UI Logo"
@@ -53,7 +53,7 @@ return(
     <div className={`flex-1 items-center mt-8 md:mt-0 md:flex ${
       state ? "block" : "hidden"
     }`}>
-      <ul className=" justify-center items-center space-y-6md:flex md:space-x-6 md:space-y-0">
+      {/* <ul className=" justify-center items-center space-y-6md:flex md:space-x-6 md:space-y-0 inline-flex items-center justify-center">
         {navigation.map((item,idx)=>{   
           return (
             <li key={idx} className="text-gray-700 hover:text-gray-900">
@@ -63,7 +63,7 @@ return(
             </li>
           );
         })}
-      </ul>
+      </ul> */}
       <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6 md:flex md:space-y-0 md:mt-0">
         {currentUser ? (
           <p className="flex items-center justify-center gap-x-1 py-2 px-4
