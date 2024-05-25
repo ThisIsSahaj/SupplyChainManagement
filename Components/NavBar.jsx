@@ -43,7 +43,7 @@ return(
         </a>
         <div className="md:hidden">
           <button 
-          className="menu-btn text-gray-500 hover:text-gray-800"
+          className="menu-btn text-blue-500 hover:text-gray-800"
           onClick={()=>setState(!state)}>
            
             {state ? <Nav1/> : <Nav2/>}
