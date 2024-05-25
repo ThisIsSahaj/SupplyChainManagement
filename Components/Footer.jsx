@@ -27,9 +27,9 @@ export default ()=>{
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 nd:px-8">
         <div className="justify-between sm:flex">
           <div className="space-y-6">
-            <img src="https://www.floatui.com/logo.svg" className="w-32"/>
+            <img src="logo.png" className="w-32"/>
           <p className="max-w-md">
-            devloped by Pull stakers.
+            devloped by Pull Stackers.
           </p>
           <ul className="flex flex-wrap gap-4 text-sm sm:text-base">
             {footerNavs.map((item,idx)=>(
@@ -54,7 +54,7 @@ export default ()=>{
               </div>
         </div>
         <div className="mt-10 py-10 border-t md:text-center">
-          <p>@ 2024 Team Pull Stacker. All rights reserved</p>
+          <p>@ 2024 Team Pull Stackers. All rights reserved</p>
         </div>
       </div>
     </footer>
