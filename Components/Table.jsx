@@ -11,7 +11,7 @@ export default ({ setCreateShipmentModel, allShipmentsdata})=>{
 };
 console.log(allShipmentsdata);
 return( 
-<div className=" max-w-screen-xl mx-auto px\ md:px-8">
+<div className="border-4 border-black rounded-xl max-w-screen-xl mx-auto px md:px-8">
   <div className=" items-start justify-between md:flex">
     <div className=" max-w-lg">
       <h3 className=" text-greay-800 text-xl font-bold sm:text-2xl">
@@ -21,12 +21,12 @@ return(
   Create a new tracking number for your shipment
 </p>
     </div>
-    <div className="mt-3 md:mt-0">
+    <div className="mt-3 md:mt-3">
       <p
       onClick={()=>setCreateShipmentModel(true)}
       href="javascript:void(0)"
       className="inline-block px-4 py-2 text-white duration-150 frnt-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 md:text-sm rounded-lg
-      md:inline-flex">
+      md:inline-flex border-4 border-black ">
         Add Tracking
         </p>
     </div>

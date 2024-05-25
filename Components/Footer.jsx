@@ -27,7 +27,8 @@ export default ()=>{
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 nd:px-8">
         <div className="justify-between sm:flex">
           <div className="space-y-6">
-            <img src="logo.png" className="w-32"/>
+            <img src="logo.png" width={200}
+          height={50} />
           <p className="max-w-md">
             {/* devloped by Pull Stackers. */}
           </p>

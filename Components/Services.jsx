@@ -43,19 +43,20 @@ export default ({
     }
   };  
   return (
-    <section className=" py-0 pb-14">
-      <div className=" max-w-screen-xl mx-auto px-4 md:px-8">
-        <div className="mt-12">
+    <section className=" py-0 pb-0">
+      <div id="bg" className=" max-w-screen-xl mx-auto px-4 md:px-8 border-4 border-black rounded-xl mb-5 py-3">
+        <div className="mt-0">
           <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
             {team.map((item, i) => (
               <li key={i}>
-                <div onClick={() => openModalBox(i+1)}
-                className=" w-full h-60 sm:h-52 md:h-56">
+                <div  onClick={() => openModalBox(i+1)}
+                className="  w-full h-60 sm:h-52 md:h-56">
                   <Image
                     src={item.avatar}
-                    className="w-full h-full object-cover object-center shadow-md rounded-xl"
+                    className="w-full h-full object-cover object-center shadow-md rounded-xl border-4  hover:border-black cursor-pointer"
                     alt=""
                     />
+                    
                 </div>
               </li>
             ))}
