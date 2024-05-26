@@ -36,7 +36,7 @@ return(
         <a href="javascriot:void(0)">
           <img
           src="logo.png"
-          width={200}
+          width={300}
           height={50}
           alt="Pull Stackers Logo"
           />

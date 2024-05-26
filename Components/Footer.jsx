@@ -6,8 +6,8 @@ export default ()=>{
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 nd:px-8">
         <div className="justify-between sm:flex">
           <div className="space-y-6">
-            <img src="logo.png" width={200}
-          height={50} />
+            <img src="logo.png" width={300}
+          height={90} />
          
           </div>
             <div className="mt-6">
