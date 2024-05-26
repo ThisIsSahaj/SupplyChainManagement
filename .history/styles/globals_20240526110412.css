@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#bg{
+    background: url("../public/bg1.png");
+    background-size:100% ;
+    height: auto;
+    background-position: auto;
+    background-repeat: no-repeat;
+   
+    
+}

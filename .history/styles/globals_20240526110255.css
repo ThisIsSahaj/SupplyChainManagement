@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#services{
+    background: url("../public/bg1.png");
+    /* background-color: white; */
+    background-size:100% ;
+    height: auto;
+    background-position: auto;
+    background-repeat: no-repeat;   
+}
+body{
+background-image: url('../public/bg2.png'); 
+backdrop-filter: blur(4px);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-attachment: fixed; 
+}
+
+#table{
+    background-color: white;
+}
+#navBar{
+    background: transparent;
+}
