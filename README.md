@@ -23,7 +23,6 @@ Kindly follow the following Instructions to run the project in your system and i
 
 <p>1. installtion</p>
 
-
 git clone  https://github.com/ThisIsSahaj/SupplyChainManagement.git
 
 
