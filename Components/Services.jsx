@@ -6,7 +6,8 @@ export default ({
   setOpenProfile,
   setCompleteModal,
   setGetModel,
-  setStartModal
+  setStartModal,
+  // setCreateShipmentModel
 
 })=>{
   const team =[
@@ -40,6 +41,9 @@ export default ({
       setStartModal(true);
     }else if(text ===4){
       setOpenProfile(true);
+    }
+    else if(text ===5){
+    // setCreateShipmentModel(true);
     }
   };  
   return (

@@ -4,7 +4,8 @@ import { ethers } from "ethers";
 // INTERNAL IMPORT
 import tracking from "../Conetxt/Tracking.json";
 
-const ContractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const ContractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";   // hardhat
+// const ContractAddress ="0xAE38D30d8b28C229bCd0f9d8d9DCE639036B35D0";      // manta network
 const ContractABI = tracking.abi;
 
 // FETCHING SMART CONTRACT
@@ -46,7 +47,8 @@ export const TrackingProvider = ({ children }) => {
 
   const getAllShipments = async () => {
     try {
-      const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:8545/');
+      const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:8545/');  //hardhat
+      // const provider = new ethers.providers.JsonRpcProvider('https://pacific-rpc.sepolia-testnet.manta.network/http');  //manta network
       const contract = fetchContract(provider);
       const shipments = await contract.getAllTransactions();
       console.log(shipments);
@@ -72,7 +74,8 @@ export const TrackingProvider = ({ children }) => {
       const accounts = await window.ethereum.request({
         method: "eth_accounts",
       });
-      const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:8545/');
+      const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:8545/');  //hardhat
+      // const provider = new ethers.providers.JsonRpcProvider('https://pacific-rpc.sepolia-testnet.manta.network/http');  ////manta network
       const contract = fetchContract(provider);
       const shipmentsCount = await contract.getShipmentsCount(accounts[0]);
       return shipmentsCount.toNumber();
@@ -117,7 +120,8 @@ export const TrackingProvider = ({ children }) => {
       const accounts = await window.ethereum.request({
         method: "eth_accounts",
       });
-      const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:8545/');
+      const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:8545/'); //hardhat
+      // const provider = new ethers.providers.JsonRpcProvider('https://pacific-rpc.sepolia-testnet.manta.network/http');  // //manta network
       const contract = fetchContract(provider);
       const shipment = await contract.getShipment(accounts[0], index);
       const singleShipment = {
