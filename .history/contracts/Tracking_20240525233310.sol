@@ -9,7 +9,7 @@ contract Tracking {
         address sender;
         address receiver;
         uint256 pickupTime;
-        uint256 deliveryTime; 
+        uint256 deliveryTime; // Added this field
         uint256 distance;
         uint256 price;
         ShipmentStatus status;
