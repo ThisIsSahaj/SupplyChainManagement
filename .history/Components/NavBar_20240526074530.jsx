@@ -38,7 +38,7 @@ return(
           src="logo.png"
           width={200}
           height={50}
-          alt="Pull Stackers Logo"
+          alt="Float UI Logo"
           />
         </a>
         <div className="md:hidden">

@@ -50,7 +50,7 @@ export default ({
                 Welcome Trader
               </h5>
 
-              <span class="text-sm text-gray-500 dark:text-gray-400 ">
+              <span class="text-sm text-gray-500 dark:text-gray-400 bg-black">
                 {currentUser}
               </span>
 

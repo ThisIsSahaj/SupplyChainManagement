@@ -54,7 +54,7 @@ export default ({
                 {currentUser}
               </span>
 
-              <div class="flex mt-4 space-x-3 md:mt-6">
+              <div class="flex mt-4 space-x-3 md:mt-6 bg-black texxt-white">
                 <a
                   href="#"
                   class="inline-flex items-center px-4 py-2 text-sm font-medium

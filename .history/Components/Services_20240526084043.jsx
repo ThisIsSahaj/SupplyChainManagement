@@ -44,7 +44,7 @@ export default ({
   };  
   return (
     <section className=" py-0 pb-0">
-      <div id="bg" className=" max-w-screen-xl mx-auto px-4 md:px-8 border-4 border-black rounded-xl mb-5 py-3">
+      <div id="bg" className=" max-w-screen-xl mx-auto px-4 md:px-8 border-4 border-green-500 rounded-xl mb-5 py-3">
         <div className="mt-0">
           <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
             {team.map((item, i) => (
@@ -53,7 +53,7 @@ export default ({
                 className="  w-full h-60 sm:h-52 md:h-56">
                   <Image
                     src={item.avatar}
-                    className="w-full h-full object-cover object-center shadow-md rounded-xl   hover:border-transparent hover:border-4 cursor-pointer"
+                    className="w-full h-full object-cover object-center shadow-md rounded-xl border-4  hover:border-white cursor-pointer"
                     alt=""
                     />
                     

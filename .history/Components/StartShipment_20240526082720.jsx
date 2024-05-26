@@ -11,7 +11,7 @@ export default ({ startModal, setStartModal, startShipment }) => {
   };
 
   return startModal ? (
-    <div className="fixed inset-0 z-10 overflow-y-auto">
+    <div className="fixed inset-0 2-10 overflow-y-auto">
       <div
         className="fixed inset-0 w-full h-full bg-black opacity-40"
         onClick={() => setStartModal(false)}
@@ -26,7 +26,7 @@ export default ({ startModal, setStartModal, startShipment }) => {
             <button
               className="p-2 text-gray-400 rounded-md hover:bg-gray-100"
               onClick={() => setStartModal(false)}>
-<Str1/>
+{/* <Str1/> */}
           </button>
         </div>
         <div className="max-w-sm mx-auto py-3 space-y-3 text-center">

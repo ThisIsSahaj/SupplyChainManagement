@@ -25,8 +25,8 @@ return(
       <p
       onClick={()=>setCreateShipmentModel(true)}
       href="javascript:void(0)"
-      className="inline-block px-4 py-2 text-white duration-150 frnt-medium bg-black hover:bg-transparent hover:text-black active:bg-black md:text-sm rounded-lg
-      md:inline-flex border-4 border-black cursor-pointer">
+      className="inline-block px-4 py-2 text-white duration-150 frnt-medium bg-black hover:bg-transparent active:bg-gray-900 md:text-sm rounded-lg
+      md:inline-flex border-4 border-black ">
         Add Tracking
         </p>
     </div>
@@ -74,10 +74,10 @@ return(
           </td>
           <td className="px-6 py-4 whitespace-nowrap">
           {shipment.status == 0
-            ? "PENDING"
+            ? "Pending"
             : shipment.status == 1
             ? "IN_TRANSIT"
-            : "DELIVERED"}
+            : "Delivered"}
           </td>
         </tr>
       ))}

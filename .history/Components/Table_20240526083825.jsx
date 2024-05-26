@@ -26,7 +26,7 @@ return(
       onClick={()=>setCreateShipmentModel(true)}
       href="javascript:void(0)"
       className="inline-block px-4 py-2 text-white duration-150 frnt-medium bg-black hover:bg-transparent hover:text-black active:bg-black md:text-sm rounded-lg
-      md:inline-flex border-4 border-black cursor-pointer">
+      md:inline-flex border-4 border-black pointer">
         Add Tracking
         </p>
     </div>

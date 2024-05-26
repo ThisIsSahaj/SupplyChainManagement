@@ -11,7 +11,7 @@ export default ({ startModal, setStartModal, startShipment }) => {
   };
 
   return startModal ? (
-    <div className="fixed inset-0 z-10 overflow-y-auto">
+    <div className="fixed inset-0 2-10 overflow-y-auto">
       <div
         className="fixed inset-0 w-full h-full bg-black opacity-40"
         onClick={() => setStartModal(false)}
@@ -40,7 +40,7 @@ export default ({ startModal, setStartModal, startShipment }) => {
                 type="text"
                 placeholder="receiver"
                 className="w-full pl-5 pr-3 py-2 text-gray-500 bg-transparent
-outline-none border focus:border-gray-400 shadow-sm rounded-lg"
+outline-none border focus: border-black-600 shadow-sm rounded-lg"
                 onChange={(e) =>
                   setGetProduct({
                     ...getProduct,
@@ -54,7 +54,7 @@ outline-none border focus:border-gray-400 shadow-sm rounded-lg"
                 type="text"
                 placeholder="Id"
                 className="w-full pl-5 pr-3 py-2 text-gray-500 bg-transparent
-outline-none border focus:border-gray-400 shadow-sm rounded-lg"
+outline-none border focus: border-black-600 shadow-sm rounded-lg"
                 onChange={(e) =>
                   setGetProduct({
                     ...getProduct,

@@ -38,7 +38,7 @@ return(
           src="logo.png"
           width={200}
           height={50}
-          alt="Pull Stackers Logo"
+          alt="Float UI Logo"
           />
         </a>
         <div className="md:hidden">
@@ -74,10 +74,10 @@ return(
         ) :(
           <button
           onClick={connectWallet}
-          className="flex items-center justify-center gap-x-1 py-2 px-4 text-black font-medium bg-transparent hover:bg-black hover:text-white active:bg-gray-900  md:inline-flex border-4 border-black rounded-lg"
+          className="flex items-center justify-center gap-x-1 py-2 px-4 text-black font-medium bg-transparent hover:bg-black hover:text-white active:bg-gray-900  md:inline-flex border-4 border-black rounded-xl"
           >
             Connect Wallet
-          <Nav3 />
+          {/* <Nav3 /> */}
           </button>
         )}
        </div>

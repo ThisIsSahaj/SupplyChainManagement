@@ -53,7 +53,7 @@ export default ({
                 className="  w-full h-60 sm:h-52 md:h-56">
                   <Image
                     src={item.avatar}
-                    className="w-full h-full object-cover object-center shadow-md rounded-xl   hover:border-transparent hover:border-4 cursor-pointer"
+                    className="w-full h-full object-cover object-center shadow-md rounded-xl   hover:border-white hover:border-4 cursor-pointer"
                     alt=""
                     />
                     

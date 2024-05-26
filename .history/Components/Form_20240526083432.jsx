@@ -52,7 +52,10 @@ export default ({
             <h4 className="text-lg font-medium text-gray-800">
               Track product, Create Shipment
             </h4>
-            
+            <p className="text-[15px] text-gray-600">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
             <form onSubmit={(e) => e.preventDefault()}>
               <div className="relative mt-3">
                 <input
@@ -108,8 +111,7 @@ export default ({
               </div>
               <button
                 onClick={() => createItem()}
-                className="block w-full mt-3 py-3 px-4 font-medium text-sm text-center text-white bg-black hover:bg-white hover:text-black active:bg-black
-                rounded-lg border-4 border-black"
+                className="block w-full mt-3 py-3 px-4 font-medium text-sm text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg ring-offset-2 ring-indigo-600 focus:ring-2"
               >
                 Create Shipment
               </button>
